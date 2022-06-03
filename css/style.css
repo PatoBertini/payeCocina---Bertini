@@ -70,7 +70,16 @@ ul li {
   font-family: "montserrat";
 }
 
-
+.nav ul li::before {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background: rgb(233, 233, 233);
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  transition: 0.4s ease-out;
+}
 
 .nav ul li:hover::before {
   width: 95%;
@@ -1645,7 +1654,7 @@ h2 {
   .form-content {
     height: 70vh;
     font-size: 0.5em;
-    padding:  0;
+    padding: 0;
     width: 100%;
   }
 
