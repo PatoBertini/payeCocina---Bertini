@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Products</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <script
       src="https://kit.fontawesome.com/0149485272.js"
       crossorigin="anonymous"
@@ -112,7 +114,13 @@
 
         <div class="card">
           <figure>
-            <img class="img" src="../images/Beeef.jpeg" alt="" />
+            <img
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              class="img"
+              src="../images/Beeef.jpeg"
+              alt=""
+            />
           </figure>
           <div>
             <h3>Beef</h3>
@@ -173,5 +181,9 @@
         </div>
       </section>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
