@@ -73,7 +73,7 @@ ul li {
 .nav ul li::before {
   content: "";
   height: 2px;
-  width: 0%;
+  width:  0%;
   background: rgb(233, 233, 233);
   position: absolute;
   left: 0;
