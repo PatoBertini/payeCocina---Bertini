@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../css/style.css" />
     <script
       src="https://kit.fontawesome.com/0149485272.js"
@@ -17,46 +22,71 @@
     <!-------------------------- HEADER -------------------------->
 
     <header>
-      <section class="r-header">
-        <img
-          class="logo logo-p"
-          src="../images/payelogo.jpeg"
-          alt="Logo paye"
-        />
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html"
+            ><img class="logo" src="../images/payelogo.jpeg" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <nav class="nav p-nav">
-          <ul>
-            <li>
-              <a href="../index.html">Home</a>
-            </li>
-            <li>
-              <a href="products.html">Products</a>
-            </li>
-            <li>
-              <a href="services.html">Services</a>
-            </li>
-            <li>
-              <a href="resources.html">Resources</a>
-            </li>
-            <li>
-              <a href="contactus.html">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mx-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="products.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="resources.html"
+                  >Resources</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="contactus.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-        <div class="r-texto">
+      <!-- banner images -->
+
+      <div
+        class="banner-image-rp w-100 vh-100 d-flex justify-content-center align-items-center"
+      >
+        <div class="content text-center justify-content-start">
           <p>
-            <span class="title-xxl">Visiting </span
-            ><span class="title-xl">& Tour guide</span>
+            <span class="title-xxl">Visiting</span>
           </p>
-          <p class="chau">
+          <p>
+            <span class="title-xl"> & Tour guide </span>
+          </p>
+
+          <p class="r-texto-header">
             If you would like more information about our industry resources you
             can aplly for a visit, and enjoy a tour through our fields situated
             in Santa Fe. From time to time we find links of interest that we
             would like to share and you will find these experience unique.
           </p>
         </div>
-      </section>
+      </div>
     </header>
 
     <!-------------------------- 1ST SECTION -------------------------->
@@ -93,6 +123,22 @@
         </div>
       </section>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      var nav = document.querySelector("nav");
+
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add("bg-dark", "shadow");
+        } else {
+          nav.classList.remove("bg-dark", "shadow");
+        }
+      });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
