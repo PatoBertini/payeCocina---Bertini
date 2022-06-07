@@ -5,19 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
     <script
-    src="https://kit.fontawesome.com/0149485272.js"
-    crossorigin="anonymous"
-  ></script>
+      src="https://kit.fontawesome.com/0149485272.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
-
     <!-------------------------- HEADER -------------------------->
 
-    <header>
+    <header class="cu-header">
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
         <div class="container">
           <a class="navbar-brand" href="../index.html"
@@ -63,29 +67,50 @@
       </nav>
     </header>
 
- <!-------------------------- FORM -------------------------->
+    <!-------------------------- FORM -------------------------->
 
- <div class="form-content">
-  <fieldset>
-    <legend>If you have other items on your wishlist, let us know! </legend>
-      <form action="#" id="survey">
-        <label for="name" id="name">Name</label>
-        <input type="text" id="name" placeholder="Enter your name" />
-        <label for="email" id="email">Email</label>
-        <input type="email" id="email" placeholder="Enter your email">
-        <label for="subject" id="subject">Subject</label>
-        <input type="text" id="subject" placeholder="Subject">
-      <label for="message" id="message"></label>
-      <textarea name="message" id="message" cols="50" rows="10">Your message</textarea>
-      <P>This site is protected by <strong> Google privacy and terms of service apply</strong>, please agree our terms and conditions.  </P>
-      <input type="checkbox" name="agree" value="1">
-      <button class="c-btn"  id="submit" type="submit">SUBMIT</button>
-    </fieldset>
-  </form>
-</div>
+    <section
+      class="container bg-dark bg-gradient text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start border border-dark border-4"
+    >
+    <h1>If you have any question do not hesitate in asking us!</h1>
 
+      <form class="row g-4">
 
-
+        <div class="col-md-6">
+          <label for="firstName" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="Name" required />
+        </div>
+        <div class="col-md-6">
+          <label for="lastName" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="lastName" />
+        </div>
+        <div class="col-md-8">
+          <label for="email" class="form-label">E-mail</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="example@gmail.com"
+          />
+        </div>
+        <div class="col-4">
+          <label for="phoneNumber" class="form-label">Phone Number</label>
+          <input
+            type="text"
+            class="form-control"
+            id="phoneNumber"
+            placeholder="+54 9 341 6 407 512"
+          />
+        </div>
+        <div class="col-md-12">
+          <label for="comments" class="form-label">Add your comments</label>
+          <textarea name="" class="form-control" id="comments" cols="20" rows="5" required></textarea> 
+        </div>
+        <div class="col-md-12">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </section>
 
     <!-------------------------- FOOTER -------------------------->
 
@@ -107,19 +132,12 @@
         </div>
       </section>
     </footer>
-    <script type="text/javascript">
-      var nav = document.querySelector("nav");
+  
 
-      window.addEventListener("scroll", function () {
-        if (window.pageYOffset > 100) {
-          nav.classList.add("bg-dark", "shadow");
-        } else {
-          nav.classList.remove("bg-dark", "shadow");
-        }
-      });
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

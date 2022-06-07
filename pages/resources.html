@@ -91,20 +91,27 @@
 
     <!-------------------------- 1ST SECTION -------------------------->
 
-    <section class="r-section">
-      <img src="../images/Beeef.jpeg" alt="pepper beef" class="r-img" />
-
-      <div class="r_texto">
-        <p>Don't Forget To Aplly For a Tour Guide</p>
-        <label for="email">
-          <input type="mail" id="mail" placeholder="Your Mail Adress" />
-        </label>
-        <button class="submit" type="submit" id="submit">SUBMIT</button>
+    <div class="container-fluid r-section">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="../images/Beeef.jpeg" alt="pepper beef" class="r-img"> 
+        </div>
+        <div class="col-lg-6">
+          <p class="r_texto">Don't Forget To Aplly For a Tour Guide</p>
+          <form>
+            <div class="">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <button type="submit" class="btn btn-warning submit">Submit</button>
+          </form>
+        </div>
       </div>
-    </section>
+
+
 
     <!-------------------------- FOOTER -------------------------->
-
     <footer>
       <section class="footer">
         <div class="derechos">
@@ -122,7 +129,12 @@
           </div>
         </div>
       </section>
-    </footer>
+    </footer> 
+
+    <!-------------------------- FOOTER -------------------------->
+
+
+
     <script type="text/javascript">
       var nav = document.querySelector("nav");
 
