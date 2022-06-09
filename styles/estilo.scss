@@ -1,0 +1,1386 @@
+/* ------------------------ FUENTE ------------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Forum&family=Koulen&family=Montserrat:wght@100&family=Parisienne&family=Questrial&family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Forum&family=Koulen&family=Parisienne&family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Forum&family=Koulen&family=Montserrat:wght@100&family=Parisienne&family=Questrial&display=swap");
+@import "generales";
+
+
+/* ------------------------ HEADER INDEX------------------------ */
+
+.banner-image {
+  background-image: url(../images/lomo.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.logo {
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  opacity: 0.9;
+  grid-area: logo;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: rgb(245, 245, 245);
+  font-size: 2.1em;
+  font-weight: bolder;
+  font-family: "montserrat";
+}
+
+.h1-header {
+  color: rgb(245, 245, 245);
+  font-size: 7vw;
+  font-weight: 500;
+  font-family: "forum";
+  letter-spacing: 1vw;
+  margin-bottom: 50px;
+}
+
+/* ------------------------ HEADER PRODUCT PAGE ------------------------ */
+
+.banner-image-pp {
+  background-color: black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("../images/carneCruda.jpeg");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: left;
+  height: 100vh;
+}
+
+.p-nav {
+  opacity: 1;
+  transition: 1s ease-out;
+}
+
+.p-texto {
+  width: 50%;
+  color: white;
+  font-family: "montserrat";
+  font-size: 2em;
+}
+
+.title-xl {
+  color: white;
+  font-family: "montserrat";
+  font-size: 8.5vw;
+  line-height: 8vw;
+}
+
+.title-xxl {
+  color: white;
+  font-size: 10.5vw;
+  line-height: 9vw;
+  font-weight: bold;
+  font-family: "forum";
+}
+
+/* ------------------------ HEADER SERVICES PAGE ------------------------ */
+
+.banner-image-sp {
+  background-color: black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("../images/butcher.jpeg");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: left;
+  height: 100vh;
+}
+
+.s-texto-header {
+  color: white;
+  font-family: "montserrat";
+  font-size: 2em;
+  line-height: 4vw;
+  width: 90%;
+}
+
+/* ------------------------ HEADER RESOURCES PAGE ------------------------ */
+
+.banner-image-rp {
+  background-color: black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("../images/brochet.jpeg");
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: right;
+  height: 100vh;
+}
+
+.r-texto-header {
+  color: white;
+  font-family: "montserrat";
+  font-size: 2em;
+  line-height: 4vw;
+  width: 90%;
+}
+
+/* ------------------------ HEADER CONTACT-US PAGE ------------------------ */
+
+.cu-header {
+  height: 170px;
+  background-color: black;
+}
+
+/* ------------------------ 1ST SECTION INDEX ------------------------ */
+
+.premium {
+  background-color: black;
+  align-items: center;
+  gap: 50px;
+}
+
+.img-fs {
+  width: 40vw;
+  border-radius: 30%;
+  margin: 0 auto;
+}
+
+.texto-fs {
+  color: white;
+  font-family: "montserrat";
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.texto-fs p {
+  font-size: 2em;
+  letter-spacing: 0.1em;
+}
+
+.texto-fs h2 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.b {
+  font-family: "montserrat";
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(245, 245, 245);
+  background-color: black;
+  height: 50px;
+  width: 230px;
+  cursor: pointer;
+  transition: 2s ease all;
+  overflow: hidden;
+}
+
+.b:hover {
+  background-color: orange;
+  opacity: 0.7;
+  animation: 2s ms 1;
+}
+
+.b a {
+  text-decoration: none;
+  color: white;
+}
+
+.b a:hover {
+  color: black;
+}
+
+@keyframes ms {
+  70% {
+    transform: scale(1.5);
+  }
+}
+
+/* ------------------------ 1ST SECTION PRODUCT PAGE ------------------------ */
+
+.img-page figure img {
+  width: 350px;
+  height: 250px;
+}
+
+.p-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.texto-page {
+  flex-direction: column;
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 65px;
+}
+
+.img-page {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  justify-content: space-evenly;
+}
+
+.foto figure img {
+  width: 430px;
+}
+
+.texto-page h2 {
+  font-family: "forum";
+  font-size: 5em;
+  letter-spacing: 2px;
+}
+
+.texto-page p {
+  font-family: "forum";
+  font-size: 1.6em;
+  margin-top: 50px;
+}
+
+/* ------------------------ 1ST SECTION SERVICES PAGE ------------------------ */
+
+.s-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 65px;
+}
+
+.s-section h2 {
+  font-family: "forum";
+  font-size: 5em;
+  letter-spacing: 2px;
+}
+
+.s-section p {
+  font-family: "forum";
+  font-size: 1.6em;
+  margin-top: 50px;
+}
+
+/* ------------------------  1ST SECTION RESOURCES PAGE ------------------------ */
+
+.r-section {
+  background-color: black;
+  height: 800px;
+}
+
+.r-img {
+  width: 80%;
+  height: 600px;
+  opacity: 0.9;
+}
+
+.r_texto {
+  font-family: "forum";
+  font-size: 5em;
+  letter-spacing: 2px;
+  color: white;
+  background-color: black;
+  margin-left: 40px;
+}
+
+.submit {
+  transition: ease 2s all;
+}
+
+.submit:hover {
+  transform: scale(1.3);
+}
+
+/* ------------------------ 2ND SECTION INDEX ------------------------ */
+
+.range {
+  background-color: white;
+  text-align: center;
+  color: black;
+  width: 100%;
+  height: 70vh;
+  font-family: "montserrat";
+}
+
+.h2-ss {
+  font-size: 6em;
+  font-weight: bold;
+}
+
+.row-h-ss {
+  height: 20vh;
+}
+
+.product a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease all;
+}
+
+.product a:hover {
+  color: black;
+}
+
+.product {
+  font-family: "montserrat";
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(245, 245, 245);
+  background-color: black;
+  height: 58px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  overflow: hidden;
+  margin-top: 10px;
+  padding: auto;
+  border-radius: 50%;
+  width: 230px;
+  margin-left: 35px;
+  letter-spacing: 2px;
+}
+
+.product:hover {
+  background-color: orange;
+  color: black;
+  transform: scale(1.2);
+}
+
+.see {
+  height: 100px;
+  width: 230px;
+  grid-area: btnf;
+  cursor: pointer;
+  transition: all 2s ease;
+  background-color: black;
+  transition-property: all;
+  margin: 0 auto;
+}
+
+.see:hover {
+  transform: scale(1.3);
+}
+
+.see a:hover {
+  color: orange;
+}
+
+.see a {
+  text-decoration: none;
+  font-family: "montserrat";
+  font-size: 1.8em;
+  font-weight: bold;
+  background-color: transparent;
+  color: white;
+}
+
+/* ------------------------ 2ND SECTION PRODUCT PAGE ------------------------ */
+
+.scnd-p {
+  font-family: "montserrat";
+  font-size: 4em;
+}
+
+.img {
+  width: 100%;
+  height: 300px;
+}
+
+.card h3 {
+  font-family: "quicksand";
+  font-weight: 1400;
+  font-size: 1.6em;
+}
+
+.card p {
+  font-family: "quicksand";
+}
+
+/* ------------------------ 2ND SECTION SERVICES PAGE -------------------- */
+
+.s-services {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  align-items: center;
+
+  grid-template-areas: "texto img";
+}
+
+.s-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "montserrat";
+  margin: 30px;
+  grid-area: texto;
+}
+
+.s-texto h2 {
+  font-family: "forum";
+  font-size: 3em;
+  letter-spacing: 1px;
+}
+
+.s-texto p {
+  font-size: 1.8em;
+}
+
+.s-img {
+  height: 53vh;
+  width: 40vw;
+  grid-area: img;
+}
+
+/* ------------------------ 3RD SECTION INDEX ------------------------ */
+
+.third-content {
+  background-color: black;
+  height: 70vh;
+}
+
+.qualy-title {
+  font-size: 4em;
+  color: white;
+  font-family: "montserrat";
+  font-weight: bold;
+  text-align: center;
+}
+
+.qualy-text {
+  color: white;
+  font-family: "montserrat";
+  font-size: 2.5em;
+  width: 85%;
+  text-align: center;
+}
+
+.video {
+  width: 550px;
+  height: 355px;
+}
+
+.qualy-b {
+  width: 230px;
+  height: 50px;
+  font-size: 1em;
+  color: white;
+  font-weight: bold;
+  border: 2px solid grey;
+  background-color: transparent;
+  font-family: "montserrat";
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgb(215, 215, 215);
+  transition: all 2s ease;
+  transition-property: all;
+}
+
+.qualy-b:hover {
+  background-color: orange;
+  color: black;
+  transform: scale(1.2);
+}
+
+.qualy-b a {
+  text-decoration: none;
+  color: white;
+  transition: all 2s ease;
+}
+
+/* ------------------------ 4TH SECTION INDEX ------------------------ */
+
+.four-content {
+  height: 100vh;
+}
+
+.row1 {
+  height: 70vh;
+}
+
+.row2 {
+  height: 30vh;
+}
+
+.f-text {
+  font-size: 4em;
+  font-family: "montserrat";
+  font-weight: bold;
+}
+
+.f-button {
+  width: 230px;
+  height: 50px;
+  font-family: "montserrat";
+  font-size: 1.5em;
+  font-weight: bold;
+  border: 3px solid rgba(205, 119, 28, 0.5);
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: all 2s ease;
+}
+
+.f-button:hover {
+  transform: scale(1.3);
+  color: orange;
+  background-color: black;
+  font-size: 1.2em;
+}
+
+.f-button a {
+  /* width: 100%;
+  height: 100%; */
+  text-decoration: none;
+  color: black;
+  transition: all 2s ease;
+}
+
+.f-button a:hover {
+  color: orange;
+  font-size: 1.2em;
+}
+
+.img-final {
+  height: 53vh;
+  width: 40vw;
+  border-radius: 40%;
+}
+
+/* ------------------------ FOOTER INDEX------------------------ */
+
+.footer {
+  color: white;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+}
+
+.iconos {
+  display: flex;
+  gap: 30px;
+}
+
+.iconos i {
+  font-size: 35px;
+}
+
+.derechos p {
+  font-size: 20px;
+}
+
+/* ------------------------ FORM ------------------------ */
+
+.form-content {
+  background-color: black;
+  margin: 0 auto;
+  height: 100vh;
+  font-family: "montserrat";
+  font-size: 2em;
+  color: white;
+  padding: 50px 200px;
+  text-align: center;
+}
+
+.form-content fieldset {
+  border: 2px solid yellow;
+}
+
+.c-btn {
+  font-size: 0.7em;
+  background-color: orange;
+}
+
+/* ---------------------------------------------------- RESPONSIVE ------------------------ */
+
+@media (max-width: 1400px) {
+  /* ------------------------ 1ST SECTION INDEX ------------------------ */
+
+  #premium p {
+    font-size: 1.7em;
+  }
+
+  #premium h2 {
+    font-size: 2.7em;
+  }
+
+  #premium .img-container figure img {
+    width: 450px;
+  }
+
+  /* ------------------------ 2ND SECTION INDEX ------------------------ */
+
+  #range h2 {
+    font-size: 5.2em;
+  }
+
+  /* -------------------- 2ND SECTION PRODUCT PAGE -------------------- */
+
+  .scnd-p h2 {
+    margin-bottom: 70px;
+    margin-left: 40px;
+    font-size: 5em;
+  }
+
+  /* ------------------------ 3RD SECTION INDEX ------------------------ */
+
+  .third-content {
+    height: 80vh;
+  }
+
+  .qualy-content {
+    gap: 10px;
+  }
+
+  .qualy-title {
+    font-size: 3.2em;
+  }
+
+  .qualy-text {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* ------------------------ HEADER INDEX ------------------------ */
+
+  .nav ul li a {
+    font-size: 1.3em;
+  }
+
+  .banner-image {
+    height: 70vh;
+  }
+
+  .logo {
+    height: 100px;
+    width: 100px;
+    opacity: 0.9;
+  }
+
+  .header {
+    height: 600px;
+  }
+
+  /* ------------------------ HEADER  PRODUCT PAGE ------------------------ */
+
+  .banner-image-pp {
+    height: 70vh;
+  }
+
+  .p-header .p-texto {
+    width: 60vw;
+    margin: 0 auto;
+    gap: 15px;
+    justify-content: flex-start;
+  }
+
+  .p-header p {
+    font-size: 1.8em;
+    line-height: 3.5vw;
+  }
+
+  .title-xxl {
+    font-size: 9.8vw;
+    line-height: 8.5vw;
+  }
+
+  .title-xl {
+    font-size: 8.5vw;
+    line-height: 8vw;
+  }
+
+  /* ------------------------ HEADER  RESOURCES PAGE ------------------------ */
+
+  .banner-image-rp,
+  .banner-image-sp {
+    height: 70vh;
+  }
+
+  .r-texto {
+    width: 80%;
+    gap: 25px;
+    margin-left: 30px;
+    margin-top: 25px;
+  }
+
+  .r-header .r-texto .title-xl {
+    font-size: 2.5em;
+  }
+
+  .r-header .r-texto .title-xxl {
+    font-size: 2.8em;
+  }
+
+  .r-header p {
+    font-size: 1.5em;
+    line-height: 3vw;
+  }
+
+  /* ------------------------ 1ST SECTION INDEX ------------------------ */
+
+  #premium {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #premium p {
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+  }
+
+  #premium h2 {
+    font-size: 2.5em;
+  }
+
+  #premium .img-container {
+    display: none;
+  }
+
+  .b {
+    margin: 0 auto;
+  }
+
+  #premium .texto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* ------------------------ 1ST SECTION PRODUCT PAGE ------------------------ */
+
+  .img-page figure img {
+    width: 400px;
+    height: 200px;
+  }
+
+  .p-section {
+    max-width: 900px;
+  }
+
+  .img-page {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: space-evenly;
+  }
+
+  .texto-page h2 {
+    font-size: 4em;
+  }
+
+  .texto-page p {
+    font-size: 1.3em;
+  }
+
+  /* ------------------------  1ST SECTION RESOURCES PAGE ------------------------ */
+
+  .r-section {
+    height: 100vh;
+  }
+
+  .r-img {
+    width: 70%;
+    height: 50vh;
+  }
+
+  .r_texto {
+    font-size: 3em;
+    margin-left: 20px;
+  }
+
+  #mail {
+    width: 40%;
+  }
+
+  /* ------------------------ 2ND SECTION INDEX ------------------------ */
+
+  #range h2 {
+    font-size: 4em;
+  }
+
+  .grid-butt {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  /* ------------------------ 3RD SECTION INDEX ------------------------ */
+
+  .video-ts {
+    display: none;
+  }
+
+  .third-content {
+    height: 60vh;
+  }
+
+  /* ------------------------ 4TH SECTION INDEX ------------------------ */
+
+  .img-div {
+    display: none;
+  }
+
+  .four-content {
+    height: 70vh;
+  }
+
+  .row1 {
+    height: 40vh;
+  }
+
+  .row2 {
+    height: 10vh;
+  }
+}
+
+@media (max-width: 850px) {
+  /* ------------------------ HEADER INDEX ------------------------ */
+
+  .banner-image-pp,
+  .banner-image-rp,
+  .banner-image-sp {
+    height: 50vh;
+  }
+
+  .banner-image {
+    height: 40vh;
+  }
+
+  .h1-header {
+    display: none;
+  }
+
+  .logo {
+    height: 120px;
+    width: 120px;
+  }
+
+  .nav ul li a {
+    font-weight: 900;
+  }
+
+  /* ------------------------ HEADER  PRODUCT PAGE ------------------------ */
+
+  .p-header {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .p-texto {
+    display: none;
+  }
+
+  .logo-p {
+    height: 100px;
+    width: 100px;
+  }
+
+  /* ------------------------ HEADER SERVICES PAGE ------------------------ */
+
+  .s-header {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ------------------------ HEADER RESOURCES PAGE ------------------------ */
+
+  .r-texto-header {
+    width: 100%;
+    font-size: 1.5em;
+    line-height: 4vh;
+  }
+
+  .chau {
+    display: none;
+  }
+
+  /* -------------------- HEADER CONTACT US PAGE --------------- */
+
+  .cu-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cu-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .cu-nav {
+    margin-top: 10px;
+  }
+
+  /* ------------------------ 1ST SECTION INDEX ------------------------ */
+
+  .img-fs {
+    display: none;
+  }
+
+  .texto {
+    align-items: center;
+  }
+
+  #premium p {
+    font-size: 0.5em;
+  }
+
+  #premium h2 {
+    font-size: 1em;
+  }
+
+  #premium .b {
+    font-size: 1em;
+    height: 30px;
+    width: 200px;
+  }
+
+  /* ------------------------ 1ST SECTION PRODUCT PAGE ------------------------ */
+
+  .img-page {
+    display: none;
+  }
+
+  .texto-page h2 {
+    font-size: 3em;
+  }
+
+  .texto-page p {
+    font-size: 1.3em;
+  }
+
+  /* ------------------------ 1ST SECTION SERVICES PAGE ------------------------ */
+
+  .s-section {
+    gap: 0;
+    padding: 10px;
+  }
+
+  .s-section h2 {
+    font-size: 2.7em;
+  }
+
+  .s-section p {
+    font-size: 1.3em;
+  }
+
+  /* ------------------------ 1ST SECTION RESOURCES ------------------------ */
+
+  .r-img {
+    display: none;
+  }
+
+  .r-section {
+    height: 60vh;
+  }
+
+  /* ------------------------ 2ND SECTION INDEX ------------------------ */
+
+  .h2-ss {
+    font-size: 4em;
+  }
+
+  #range .see {
+    height: 40px;
+    width: 200px;
+    font-size: 0.5em;
+  }
+
+  .product {
+    font-size: 1.3em;
+    height: 40px;
+    width: 200px;
+  }
+
+  /* ------------------------ 2ND SECTION PRODUCT PAGE ------------------------ */
+
+  .scnd-p {
+    margin-top: 20px;
+  }
+
+  .scnd-p h2 {
+    font-size: 2.3em;
+  }
+
+  .card h3 {
+    font-family: "quicksand";
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  /* ------------------------ 2ND SECTION SERVICES PAGE ------------------------ */
+
+  .s-services {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+  }
+
+  .s-services .s-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .s-texto-header {
+    display: none;
+  }
+
+  .s-services img {
+    display: none;
+  }
+
+  .s-services h2 {
+    font-size: 2.7em;
+  }
+
+  .s-services p {
+    font-size: 1.3em;
+  }
+
+  /* ------------------------ 3RD SECTION INDEX ------------------------ */
+
+  .third-content {
+    height: 70vh;
+  }
+
+  .qualy-title {
+    font-size: 3.2em;
+  }
+
+  .qualy-text {
+    font-size: 2em;
+  }
+
+  .qualy-b {
+    width: 200px;
+    height: 70px;
+    font-size: 1.3em;
+  }
+
+  /* ------------------------ 4TH SECTION INDEX ------------------------ */
+
+  .f-container {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    gap: 40px;
+  }
+
+  .f-text {
+    font-size: 3em;
+    margin: 0 auto;
+  }
+
+  /* ------------------------ FORM ------------------------ */
+
+  .form-content {
+    height: 60vh;
+    font-size: 0.7em;
+    padding: 25px 100px;
+  }
+
+  .c-btn {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 480px) {
+  /* ------------------------ HEADER INDEX ------------------------ */
+  .banner-image-pp,
+  .banner-image-rp,
+  .banner-image-sp {
+    height: 40vh;
+  }
+
+  .nav {
+    margin: 0 auto;
+  }
+
+  .nav ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+  }
+
+  .logo {
+    height: 90px;
+    width: 90px;
+  }
+
+  .nav ul li a {
+    font-size: 0.6em;
+  }
+
+  /* ------------------------ PRODUCT PAGE HEADER ------------------------ */
+
+  .p-header {
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .p-nav {
+    margin: 0 auto;
+  }
+
+  .p-nav ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    gap: 0;
+  }
+
+  .logo-p {
+    height: 80px;
+    width: 80px;
+    margin: 0;
+  }
+
+  .p-nav ul li a {
+    font-size: 0.7em;
+  }
+
+  /* ------------------------ SERVICES PAGE HEADER ------------------------ */
+
+  .s-header {
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .r-texto-header {
+    display: none;
+  }
+
+  /* ------------------------ RESOURCES PAGE HEADER ------------------------ */
+
+  .r-header {
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .r-header img {
+    margin: 0 auto;
+  }
+
+  .r-texto {
+    margin: 0;
+  }
+
+  .r-header .r-texto .title-xl {
+    font-size: 1em;
+    line-height: 5vh;
+  }
+
+  .r-header .r-texto .title-xxl {
+    font-size: 1em;
+  }
+
+  /* ------------------------ 1ST SECTION INDEX ------------------------ */
+
+  #premium {
+    height: 200px;
+    gap: 0;
+  }
+
+  #premium p {
+    font-size: 0.4em;
+  }
+
+  #premium h2 {
+    font-size: 0.6em;
+  }
+
+  #premium .b {
+    width: 100px;
+    height: 20px;
+    font-size: 0.3em;
+  }
+
+  /* ------------------------ 1ST SECTION PRODUCT PAGE ------------------------ */
+
+  .texto-page {
+    margin-top: 25px;
+    padding: 10px;
+  }
+
+  .texto-page h2 {
+    font-size: 2em;
+  }
+
+  .texto-page p {
+    font-size: 1em;
+  }
+
+  /* ------------------------ 1ST SECTION SERVICE PAGE ------------------------ */
+
+  .s-section {
+    margin-top: 10px;
+  }
+
+  .s-section h2 {
+    font-size: 1.5em;
+  }
+
+  .s-section p {
+    font-size: 1em;
+    margin-top: 10px;
+  }
+
+  /* ------------------------ 1ST SECTION RESOURCES ------------------------ */
+
+  .r-section img {
+    display: none;
+  }
+
+  /* ------------------------ 2ND SECTION INDEX ------------------------ */
+
+  .range {
+    height: 40vh;
+  }
+
+  .div-h2-ss {
+    display: none;
+  }
+
+  .range .see {
+    height: 80px;
+    width: 150px;
+    font-size: 0.7em;
+  }
+
+  .product {
+    font-size: 1em;
+    height: 80px;
+    width: 110px;
+  }
+
+  #range .grid-botones {
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* ------------------------ 2ND SECTION PRODUCT PAGE ------------------------ */
+
+  .scnd-p h2 {
+    font-size: 1.8em;
+    margin-left: 20px;
+    margin-bottom: 40px;
+  }
+
+  .mat-prima {
+    margin-left: 0px;
+  }
+
+  .card {
+    width: auto;
+    height: auto;
+  }
+
+  /* ------------------------ 2ND SECTION SERVICE PAGE ------------------------ */
+
+  .s-services .s-texto h2 {
+    font-size: 1.5em;
+  }
+
+  .s-services .s-texto p {
+    font-size: 1em;
+  }
+
+  .s-services .s-texto {
+    margin: 10px;
+    width: 90%;
+  }
+
+  .s-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+  }
+
+  /* ------------------------ 3RD SECTION INDEX ------------------------ */
+
+  #third-content {
+    height: 200px;
+  }
+
+  .qualy-content {
+    font-size: 0.3em;
+  }
+
+  .qualy-b {
+    width: 120px;
+    height: 70px;
+    font-size: 0.7em;
+  }
+
+  /* ------------------------ 4TH SECTION INDEX ------------------------ */
+
+  .f-container {
+    height: 200px;
+  }
+
+  .f-text p {
+    font-size: 1em;
+  }
+
+  .f-button {
+    width: 120px;
+    height: 70px;
+    font-size: 0.7em;
+  }
+
+  /* ------------------------ FOOTER INDEX ------------------------ */
+
+  .footer {
+    height: 20vh;
+  }
+
+  .iconos {
+    gap: 20px;
+  }
+
+  .iconos i {
+    font-size: 25px;
+  }
+
+  .derechos p {
+    font-size: 20px;
+  }
+
+  /* ------------------------ FORM ------------------------ */
+
+  .form-content {
+    height: 70vh;
+    font-size: 0.5em;
+    padding: 0;
+    width: 100%;
+  }
+
+  .c-btn {
+    font-size: 0.5em;
+  }
+}
