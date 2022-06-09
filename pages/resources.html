@@ -69,7 +69,7 @@
       <!-- banner images -->
 
       <div
-        class="banner-image-rp w-100 vh-100 d-flex justify-content-center align-items-center"
+        class="banner-image-rp d-flex justify-content-center align-items-center"
       >
         <div class="content text-center justify-content-start">
           <p>
@@ -96,18 +96,60 @@
         <div class="col-lg-6">
           <img src="../images/Beeef.jpeg" alt="pepper beef" class="r-img"> 
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 d-lg-flex-col ">
           <p class="r_texto">Don't Forget To Aplly For a Tour Guide</p>
-          <form>
-            <div class="">
-              <label for="email" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <button type="submit" class="btn btn-warning submit">Submit</button>
-          </form>
+          <button type="submit" class="btn btn-warning submit" data-bs-toggle="modal" data-bs-target="#enroll" >Submit</button>
         </div>
       </div>
+
+      <!-- Modal -->
+
+<div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="lead">Fill out this form to apply for a tour guide</p>
+        <form>
+          <div class="mb-3">
+            <label for="first-name" class="col-form-label">
+              First Name:
+            </label>
+            <input type="text" class="form-control" id="first-name">
+          </div>
+
+          <div class="mb-3">
+            <label for="last-name" class="col-form-label">
+              Last Name:
+            </label>
+            <input type="text" class="form-control" id="last-name">
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="col-form-label">
+              E-mail:
+            </label>
+            <input type="email" class="form-control" id="email">
+          </div>
+
+          <div class="mb-3">
+            <label for="phone" class="col-form-label">
+              Phone:
+            </label>
+            <input type="tel" class="form-control" id="phone">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Join the adventure!</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
