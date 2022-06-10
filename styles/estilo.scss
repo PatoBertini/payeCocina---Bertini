@@ -1,4 +1,5 @@
 /* ------------------------ FUENTE ------------------------ */
+@import "variables";
 @import url("https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Forum&family=Koulen&family=Montserrat:wght@100&family=Parisienne&family=Questrial&family=Quicksand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Forum&family=Koulen&family=Parisienne&family=Questrial&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Forum&family=Koulen&family=Montserrat:wght@100&family=Parisienne&family=Questrial&display=swap");
@@ -10,30 +11,29 @@
 .banner-image {
   background-image: url(../images/lomo.jpg);
   background-size: cover;
-  height: 100vh;
+  height: $xl-height;
 }
 
 .logo {
-  border-radius: 50%;
+  border-radius: $redondo;
   height: 120px;
   width: 120px;
   opacity: 0.9;
-  grid-area: logo;
 }
 
 .nav-item {
   text-decoration: none;
-  color: rgb(245, 245, 245);
+  color: $blanco;
   font-size: 2.1em;
   font-weight: bolder;
-  font-family: "montserrat";
+  font-family: $tipografia-principal;
 }
 
 .h1-header {
   color: rgb(245, 245, 245);
   font-size: 7vw;
   font-weight: 500;
-  font-family: "forum";
+  font-family: $tipografia-secundaria;
   letter-spacing: 1vw;
   margin-bottom: 50px;
 }
@@ -126,64 +126,6 @@
 
 /* ------------------------ 1ST SECTION INDEX ------------------------ */
 
-.premium {
-  background-color: black;
-  align-items: center;
-  gap: 50px;
-}
-
-.img-fs {
-  width: 40vw;
-  border-radius: 30%;
-  margin: 0 auto;
-}
-
-.texto-fs {
-  color: white;
-  font-family: "montserrat";
-  gap: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.texto-fs p {
-  font-size: 2em;
-  letter-spacing: 0.1em;
-}
-
-.texto-fs h2 {
-  font-size: 3em;
-  font-weight: bold;
-}
-
-.b {
-  font-family: "montserrat";
-  font-size: 1.5em;
-  font-weight: bold;
-  color: rgb(245, 245, 245);
-  background-color: black;
-  height: 50px;
-  width: 230px;
-  cursor: pointer;
-  transition: 2s ease all;
-  overflow: hidden;
-}
-
-.b:hover {
-  background-color: orange;
-  opacity: 0.7;
-  animation: 2s ms 1;
-}
-
-.b a {
-  text-decoration: none;
-  color: white;
-}
-
-.b a:hover {
-  color: black;
-}
 
 @keyframes ms {
   70% {
@@ -293,87 +235,6 @@
   transform: scale(1.3);
 }
 
-/* ------------------------ 2ND SECTION INDEX ------------------------ */
-
-.range {
-  background-color: white;
-  text-align: center;
-  color: black;
-  width: 100%;
-  height: 70vh;
-  font-family: "montserrat";
-}
-
-.h2-ss {
-  font-size: 6em;
-  font-weight: bold;
-}
-
-.row-h-ss {
-  height: 20vh;
-}
-
-.product a {
-  text-decoration: none;
-  color: white;
-  transition: 0.3s ease all;
-}
-
-.product a:hover {
-  color: black;
-}
-
-.product {
-  font-family: "montserrat";
-  font-size: 1.5em;
-  font-weight: bold;
-  color: rgb(245, 245, 245);
-  background-color: black;
-  height: 58px;
-  cursor: pointer;
-  transition: 0.3s ease all;
-  overflow: hidden;
-  margin-top: 10px;
-  padding: auto;
-  border-radius: 50%;
-  width: 230px;
-  margin-left: 35px;
-  letter-spacing: 2px;
-}
-
-.product:hover {
-  background-color: orange;
-  color: black;
-  transform: scale(1.2);
-}
-
-.see {
-  height: 100px;
-  width: 230px;
-  grid-area: btnf;
-  cursor: pointer;
-  transition: all 2s ease;
-  background-color: black;
-  transition-property: all;
-  margin: 0 auto;
-}
-
-.see:hover {
-  transform: scale(1.3);
-}
-
-.see a:hover {
-  color: orange;
-}
-
-.see a {
-  text-decoration: none;
-  font-family: "montserrat";
-  font-size: 1.8em;
-  font-weight: bold;
-  background-color: transparent;
-  color: white;
-}
 
 /* ------------------------ 2ND SECTION PRODUCT PAGE ------------------------ */
 
@@ -437,144 +298,7 @@
   grid-area: img;
 }
 
-/* ------------------------ 3RD SECTION INDEX ------------------------ */
 
-.third-content {
-  background-color: black;
-  height: 70vh;
-}
-
-.qualy-title {
-  font-size: 4em;
-  color: white;
-  font-family: "montserrat";
-  font-weight: bold;
-  text-align: center;
-}
-
-.qualy-text {
-  color: white;
-  font-family: "montserrat";
-  font-size: 2.5em;
-  width: 85%;
-  text-align: center;
-}
-
-.video {
-  width: 550px;
-  height: 355px;
-}
-
-.qualy-b {
-  width: 230px;
-  height: 50px;
-  font-size: 1em;
-  color: white;
-  font-weight: bold;
-  border: 2px solid grey;
-  background-color: transparent;
-  font-family: "montserrat";
-  cursor: pointer;
-  box-shadow: 2px 2px 10px rgb(215, 215, 215);
-  transition: all 2s ease;
-  transition-property: all;
-}
-
-.qualy-b:hover {
-  background-color: orange;
-  color: black;
-  transform: scale(1.2);
-}
-
-.qualy-b a {
-  text-decoration: none;
-  color: white;
-  transition: all 2s ease;
-}
-
-/* ------------------------ 4TH SECTION INDEX ------------------------ */
-
-.four-content {
-  height: 100vh;
-}
-
-.row1 {
-  height: 70vh;
-}
-
-.row2 {
-  height: 30vh;
-}
-
-.f-text {
-  font-size: 4em;
-  font-family: "montserrat";
-  font-weight: bold;
-}
-
-.f-button {
-  width: 230px;
-  height: 50px;
-  font-family: "montserrat";
-  font-size: 1.5em;
-  font-weight: bold;
-  border: 3px solid rgba(205, 119, 28, 0.5);
-  background-color: white;
-  color: black;
-  cursor: pointer;
-  transition: all 2s ease;
-}
-
-.f-button:hover {
-  transform: scale(1.3);
-  color: orange;
-  background-color: black;
-  font-size: 1.2em;
-}
-
-.f-button a {
-  /* width: 100%;
-  height: 100%; */
-  text-decoration: none;
-  color: black;
-  transition: all 2s ease;
-}
-
-.f-button a:hover {
-  color: orange;
-  font-size: 1.2em;
-}
-
-.img-final {
-  height: 53vh;
-  width: 40vw;
-  border-radius: 40%;
-}
-
-/* ------------------------ FOOTER INDEX------------------------ */
-
-.footer {
-  color: white;
-  width: 100%;
-  height: 200px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: black;
-}
-
-.iconos {
-  display: flex;
-  gap: 30px;
-}
-
-.iconos i {
-  font-size: 35px;
-}
-
-.derechos p {
-  font-size: 20px;
-}
 
 /* ------------------------ FORM ------------------------ */
 
@@ -632,7 +356,7 @@
   /* ------------------------ 3RD SECTION INDEX ------------------------ */
 
   .third-content {
-    height: 80vh;
+    height: 90vh;
   }
 
   .qualy-content {
@@ -830,7 +554,7 @@
   }
 
   .four-content {
-    height: 70vh;
+    height: 80vh;
   }
 
   .row1 {
