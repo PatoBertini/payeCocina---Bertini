@@ -98,11 +98,8 @@ html {
       cursor: pointer;
       transition: 0.3s ease all;
       overflow: hidden;
-      margin-top: 10px;
-      padding: auto;
       border-radius: $redondo;
       width: 230px;
-      margin-left: 35px;
       letter-spacing: 2px;
 
       &:hover {
@@ -151,7 +148,8 @@ html {
 
 .third-content {
   background-color: $negro;
-  height: $l-height;
+    height: 1000px;
+  
 
   .qualy-title {
     font-size: 4em;
