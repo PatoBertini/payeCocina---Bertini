@@ -1,0 +1,526 @@
+/* ------------------------ 1ST SECTION INDEX------------------------ */
+
+.premium {
+    background-color: $negro;
+    align-items: center;
+    gap: 50px;
+
+    .img-fs {
+        width: 40vw;
+        border-radius: 30%;
+        margin: 0 auto;
+    }
+
+    .texto-fs {
+        color: $blanco;
+        font-family: $tipografia-principal;
+        gap: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+            font-size: 3em;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 2em;
+            letter-spacing: 0.1em;
+        }
+    }
+
+    .b {
+        font-family: $tipografia-principal;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: $blanco;
+        background-color: $negro;
+        height: 50px;
+        width: 230px;
+        cursor: pointer;
+        transition: 2s ease all;
+        overflow: hidden;
+
+        &:hover {
+            background-color: orange;
+            opacity: 0.7;
+            animation: 2s ms 1;
+        }
+
+        a {
+            text-decoration: none;
+            color: $blanco;
+
+            &:hover {
+                color: $negro;
+            }
+        }
+    }
+}
+
+/* ------------------------ 2nd SECTION INDEX------------------------ */
+
+.range {
+    background-color: $blanco;
+    text-align: center;
+    color: $negro;
+    width: 100%;
+    height: $l-height;
+    font-family: $tipografia-principal;
+
+    .row-h-ss {
+        height: $s-height;
+
+        .h2-ss {
+            font-size: 6em;
+            font-weight: bold;
+        }
+
+        .product {
+            font-family: $tipografia-principal;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: $blanco;
+            background-color: $negro;
+            height: 58px;
+            cursor: pointer;
+            transition: 0.3s ease all;
+            overflow: hidden;
+            border-radius: $redondo;
+            width: 230px;
+            letter-spacing: 2px;
+
+            &:hover {
+                background-color: orange;
+                color: $negro;
+                transform: scale(1.2);
+            }
+
+            a {
+                text-decoration: none;
+                color: $blanco;
+                transition: 0.3s ease all;
+
+                &a:hover {
+                    color: $negro;
+                }
+            }
+        }
+
+        .see {
+            height: 100px;
+            width: 230px;
+            cursor: pointer;
+            transition: all 2s ease;
+            background-color: $negro;
+            transition-property: all;
+            margin: 0 auto;
+
+            &:hover {
+                transform: scale(1.3);
+            }
+
+            a {
+                text-decoration: none;
+                font-family: $tipografia-principal;
+                font-size: 1.8em;
+                font-weight: bold;
+                background-color: transparent;
+                color: $blanco;
+
+                &:hover {
+                    color: orange;
+                }
+            }
+        }
+    }
+}
+
+/* ------------------------ 3RD SECTION INDEX ------------------------ */
+
+.third-content {
+    background-color: $negro;
+    height: 1000px;
+
+
+    .qualy-title {
+        font-size: 4em;
+        color: $blanco;
+        font-family: $tipografia-principal;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .qualy-text {
+        color: $blanco;
+        font-family: $tipografia-principal;
+        font-size: 2.5em;
+        width: 85%;
+        text-align: center;
+    }
+
+    .qualy-b {
+        width: 230px;
+        height: 50px;
+        font-size: 1em;
+        color: $blanco;
+        font-weight: bold;
+        border: 2px solid grey;
+        background-color: transparent;
+        font-family: $tipografia-principal;
+        cursor: pointer;
+        box-shadow: 2px 2px 10px rgb(215, 215, 215);
+        transition: all 2s ease;
+        transition-property: all;
+
+        &:hover {
+            background-color: orange;
+            color: $negro;
+            transform: scale(1.2);
+        }
+
+        a {
+            text-decoration: none;
+            color: $blanco;
+            transition: all 2s ease;
+        }
+    }
+
+    .video {
+        width: 550px;
+        height: 355px;
+    }
+}
+
+/* ------------------------ 4TH SECTION INDEX ------------------------ */
+
+.four-content {
+    height: $xl-height;
+
+    .row1 {
+        height: $l-height;
+
+        .f-text {
+            font-size: 4em;
+            font-family: $tipografia-principal;
+            font-weight: bold;
+        }
+
+        .img-final {
+            height: 53vh;
+            width: 40vw;
+            border-radius: 40%;
+        }
+    }
+
+    .row2 {
+        height: 30vh;
+
+        .f-button {
+            width: 230px;
+            height: 50px;
+            font-family: $tipografia-principal;
+            font-size: 1.5em;
+            font-weight: bold;
+            border: 3px solid rgba(205, 119, 28, 0.5);
+            background-color: $blanco;
+            color: $negro;
+            cursor: pointer;
+            transition: all 2s ease;
+
+            &:hover {
+                transform: scale(1.3);
+                color: orange;
+                background-color: $negro;
+                font-size: 1.2em;
+            }
+
+            a {
+                text-decoration: none;
+                color: $negro;
+                transition: all 2s ease;
+
+                &:hover {
+                    color: orange;
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+}
+
+/* ------------------------ FOOTER INDEX------------------------ */
+
+.footer {
+    color: white;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+
+    .derechos p {
+        font-size: 1.5em;
+    }
+
+    .iconos {
+        display: flex;
+        gap: 30px;
+
+        i {
+            font-size: 35px;
+        }
+    }
+}
+
+// ---Medias-Querys---
+
+@media (max-width: 1400px) {
+    /* ------------------------ 1ST SECTION INDEX ------------------------ */
+
+    .banner-image {
+        height: $l-height;
+    }
+
+    .premium {
+
+        .texto-fs {
+            p {
+                font-size: 1.7em;
+            }
+
+            h2 {
+                font-size: 2.7em;
+            }
+        }
+    }
+
+
+
+
+
+    /* ------------------------ 3RD SECTION INDEX ------------------------ */
+
+
+    .third-content {
+
+        .qualy-content {
+            gap: 10px;
+        }
+
+        .qualy-title {
+            font-size: 3.2em;
+        }
+
+        .qualy-text {
+            font-size: 2em;
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+
+    /* ------------------------ 3RD SECTION INDEX ------------------------ */
+
+
+    .third-content {
+        height: auto;
+
+        .video-ts {
+            display: none;
+        }
+    }
+
+    /* ------------------------ 4th SECTION INDEX ------------------------ */
+
+    .four-content {
+        height: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    /* ------------------------ 1ST SECTION INDEX ------------------------ */
+
+    .premium {
+        width: 100%;
+        height: auto;
+
+
+        .texto-fs {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+
+
+            p {
+                font-size: 1.5em;
+                letter-spacing: 0.1em;
+            }
+
+            h2 {
+                font-size: 2.5em;
+            }
+
+            .b {
+                margin: 0 auto;
+            }
+        }
+
+        .img-fss {
+            display: none;
+        }
+
+    }
+
+
+
+    /* ------------------------ 2ND SECTION INDEX ------------------------ */
+
+    .range {
+
+        height: auto;
+        .row-h-ss {
+
+            .h2-ss {
+                font-size: 4em;
+            }
+
+            .see {
+                height: auto;
+                width: auto;
+            }
+        }
+
+        .grid-butt {
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+    }
+
+    /* ------------------------ 3RD SECTION INDEX ------------------------ */
+
+    .video-ts {
+        display: none;
+    }
+
+    .third-content {
+        height: auto;
+    }
+
+    /* ------------------------ 4TH SECTION INDEX ------------------------ */
+
+
+    .four-content {
+
+        .row1 {
+            height: auto;
+
+            .img-div {
+                display: none;
+            }
+        }
+
+        .row2 {
+            height: auto;
+        }
+
+    }
+
+}
+
+@media (max-width: 850px) {
+
+    /* ------------------------ 2ND SECTION INDEX ------------------------ */
+
+    .range .row-h-ss .h2-ss {
+        font-size: 3.2em;
+    }
+
+
+    /* ------------------------ 3RD SECTION INDEX ------------------------ */
+
+    .third-content {
+        height: auto;
+
+        .qualy-b {
+            width: 200px;
+            height: 70px;
+            font-size: 1.3em;
+        }
+
+    }
+
+}
+
+@media (max-width: 480px) {
+
+
+    /* ------------------------ 1ST SECTION INDEX ------------------------ */
+
+    .premium {
+        height: auto;
+    }
+
+
+
+
+    /* ------------------------ 2ND SECTION INDEX ------------------------ */
+
+    .range {
+        height: auto;
+
+        .div-h2-ss {
+            display: none;
+        }
+
+        .grid-butt {
+            display: grid;
+            grid-template-columns: auto;
+            gap: 15px;
+        }
+
+        .row-h-ss .see {
+            height: auto;
+            width: auto;
+            font-size: 0.7em;
+            margin-top: 30px;
+        }
+
+    }
+
+    /* ------------------------ 3RD SECTION INDEX ------------------------ */
+
+
+    .third-content {
+
+        .qualy-text {
+            font-size: 1.8em;
+        }
+
+        .qualy-title {
+            font-size: 3em;
+        }
+
+    }
+
+    /* ------------------------ 4TH SECTION INDEX ------------------------ */
+
+    .four-content {
+        .row1 {
+            .f-text {
+                font-size: 3em;
+            }
+        }
+    }
+
+
+}

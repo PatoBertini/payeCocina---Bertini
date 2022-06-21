@@ -1,0 +1,198 @@
+
+@import "generales";
+
+
+/* ------------------------ 1ST SECTION SERVICES PAGE ------------------------ */
+
+.s-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    @include flex-c;
+    gap: 50px;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 65px;
+
+    h2 {
+        font-family: "forum";
+        font-size: 4.5em;
+        letter-spacing: 2px;
+    }
+
+    p {
+        font-family: "forum";
+        font-size: 2.2em;
+
+    }
+
+}
+
+
+/* ------------------------ 2ND SECTION SERVICES PAGE -------------------- */
+
+.s-services {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    align-items: center;
+
+    grid-template-areas: "texto img";
+
+    .s-texto {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        align-items: flex-start;
+        font-family: "montserrat";
+        margin: 30px;
+        grid-area: texto;
+
+        h2 {
+            font-family: "forum";
+            font-size: 4.5em;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 2.2em;
+        }
+
+
+    }
+
+
+    .s-img {
+        height: 53vh;
+        width: 40vw;
+
+    }
+
+
+}
+
+
+// --- Medias-Querys ---
+
+@media (max-width: 1250px) {
+
+    /* ------------------------ 2nd SECTION SERVICES ------------------------ */
+
+
+    .s-services .s-img {
+        height: 40vh;
+        width: 30vw;
+
+    }
+
+}
+
+@media (max-width: 850px) {
+
+    /* ------------------------ 1ST SECTION SERVICES PAGE ------------------------ */
+
+
+    .s-section {
+        padding: 0;
+
+        h2 {
+            font-size: 2.7em;
+            letter-spacing: 0px;
+        }
+
+        .s-section p {
+            font-size: 1.3em;
+        }
+    }
+
+
+
+    /* ------------------------ 2ND SECTION SERVICES PAGE ------------------------ */
+
+    .s-services {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+        .s-texto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+                font-size: 2.7em;
+            }
+
+            p {
+                font-size: 1.3em;
+            }
+        }
+
+    }
+
+
+
+    .s-texto-header {
+        display: none;
+    }
+
+    .s-services img {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+
+    /* ------------------------ 1ST SECTION SERVICE PAGE ------------------------ */
+
+    .s-section {
+        margin-top: 10px;
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        p {
+            font-size: 1em;
+            margin-top: 10px;
+        }
+
+    }
+
+
+
+    /* ------------------------ 2ND SECTION SERVICE PAGE ------------------------ */
+
+    .s-services {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+
+        .s-texto {
+
+            margin: 10px;
+            width: 90%;
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+
+
+
+
+    }
+
+}

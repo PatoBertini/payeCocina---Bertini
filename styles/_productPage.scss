@@ -1,0 +1,169 @@
+/* ------------------------ 1ST SECTION PRODUCT PAGE ------------------------ */
+.p-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    .texto-page {
+        flex-direction: column;
+        display: flex;
+        padding: 20px;
+        text-align: center;
+        justify-content: center;
+        margin-top: 65px;
+
+        h2 {
+            font-family: "forum";
+            font-size: 5em;
+            letter-spacing: 2px;
+        }
+
+        p {
+            font-family: "forum";
+            font-size: 1.6em;
+            margin-top: 50px;
+        }
+
+    }
+
+    .img-page {
+        display: grid;
+        grid-template-columns: 400px 400px;
+        justify-content: space-evenly;
+
+        .foto figure img {
+            width: 430px;
+            height: 250px;
+        }
+
+    }
+
+}
+
+/* ------------------------ 2ND SECTION PRODUCT PAGE ------------------------ */
+
+
+
+.scnd-p {
+    font-family: "montserrat";
+    font-size: 4em;
+}
+
+
+.card {
+
+    h3 {
+        font-family: "quicksand";
+        font-size: 1.6em;
+    }
+
+    p {
+        font-family: "quicksand";
+    }
+
+    .img {
+        width: 100%;
+        height: 300px;
+    }
+
+}
+
+
+// ---Medias-querys---
+@media (max-width: 1400px) {
+
+    /* -------------------- 2ND SECTION PRODUCT PAGE -------------------- */
+
+    .scnd-p {
+        margin-bottom: 70px;
+        margin-left: 40px;
+        font-size: 5em;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    /* ------------------------ 1ST SECTION PRODUCT PAGE ------------------------ */
+
+
+    .p-section .texto-page h2 {
+        font-size: 4em;
+    }
+
+    .p-section .texto-page p {
+        font-size: 1.3em;
+    }
+
+}
+
+@media (max-width: 850px) {
+
+    /* ------------------------ 1ST SECTION PRODUCT PAGE ------------------------ */
+
+    .p-section .img-page {
+        display: none;
+    }
+
+    .p-section .texto-page h2 {
+        font-size: 3em;
+    }
+
+    .p-section .texto-page p {
+        font-size: 1.3em;
+    }
+
+    /* ------------------------ 2ND SECTION PRODUCT PAGE ------------------------ */
+
+    .scnd-p {
+        margin-top: 20px;
+        font-size: 3.7em;
+    }
+
+    .card {
+
+
+        h3 {
+            font-family: "quicksand";
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+    }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+    /* ------------------------ 1ST SECTION PRODUCT PAGE ------------------------ */
+
+    .p-section .texto-page {
+        margin-top: 25px;
+        padding: 10px;
+    }
+
+    .p-section .texto-page h2 {
+        font-size: 2em;
+    }
+
+    .p-section .texto-page p {
+        font-size: 1em;
+    }
+
+    /* ------------------------ 2ND SECTION PRODUCT PAGE ------------------------ */
+
+    .scnd-p {
+        font-size: 2.5em;
+        margin-left: 20px;
+        margin-bottom: 40px;
+    }
+
+    .card {
+        width: auto;
+        height: auto;
+    }
+
+}

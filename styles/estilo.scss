@@ -4,6 +4,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Forum&family=Koulen&family=Parisienne&family=Questrial&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Forum&family=Koulen&family=Montserrat:wght@100&family=Parisienne&family=Questrial&display=swap");
 @import "generales";
+@import "index";
+@import "productPage";
+@import "services";
+@import "resources";
+
+
 
 /* ------------------------ HEADER INDEX------------------------ */
 
@@ -39,12 +45,19 @@
 
 /* ------------------------ HEADER PRODUCT PAGE ------------------------ */
 
+$estilos:(
+  color: black,
+  centrado: no-repeat,
+  size: 60%,
+);
+
+
 .banner-image-pp {
-  background-color: black;
+  background-color: map-get($estilos, color);
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url("../images/carneCruda.jpeg");
-  background-repeat: no-repeat;
-  background-size: 60%;
+  background-repeat: map-get($estilos, centrado);
+  background-size: map-get($estilos, size);
   background-position: left;
   height: 100vh;
 }
@@ -116,6 +129,10 @@
   width: 90%;
 }
 
+.content {
+  margin-top: 100px;
+}
+
 /* ------------------------ HEADER CONTACT-US PAGE ------------------------ */
 
 .cu-header {
@@ -131,259 +148,8 @@
   }
 }
 
-/* ------------------------ 1ST SECTION PRODUCT PAGE ------------------------ */
-
-.img-page figure img {
-  width: 350px;
-  height: 250px;
-}
-
-.p-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-
-.texto-page {
-  flex-direction: column;
-  display: flex;
-  padding: 20px;
-  text-align: center;
-  justify-content: center;
-  margin-top: 65px;
-}
-
-.img-page {
-  display: grid;
-  grid-template-columns: 400px 400px;
-  justify-content: space-evenly;
-}
-
-.foto figure img {
-  width: 430px;
-}
-
-.texto-page h2 {
-  font-family: "forum";
-  font-size: 5em;
-  letter-spacing: 2px;
-}
-
-.texto-page p {
-  font-family: "forum";
-  font-size: 1.6em;
-  margin-top: 50px;
-}
-
-/* ------------------------ 1ST SECTION SERVICES PAGE ------------------------ */
-
-.s-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  padding: 20px;
-  text-align: center;
-  justify-content: center;
-  margin-top: 65px;
-}
-
-.s-section h2 {
-  font-family: "forum";
-  font-size: 5em;
-  letter-spacing: 2px;
-}
-
-.s-section p {
-  font-family: "forum";
-  font-size: 2.8em;
-  
-}
-
-/* ------------------------  1ST SECTION RESOURCES PAGE ------------------------ */
-
-.r-section {
-  background-color: black;
-  height: auto;
-}
-
-.r-img {
-  width: 70%;
-  height: 60vh;
-  opacity: 0.9;
-}
-
-.r_texto {
-  font-family: "forum";
-  font-size: 5em;
-  letter-spacing: 2px;
-  color: white;
-  background-color: black;
-  margin-left: 40px;
-}
-
-.submit {
-  transition: ease 2s all;
-}
-
-.submit:hover {
-  transform: scale(1.3);
-}
-
-/* ------------------------ 2ND SECTION PRODUCT PAGE ------------------------ */
-
-.scnd-p {
-  font-family: "montserrat";
-  font-size: 4em;
-}
-
-.img {
-  width: 100%;
-  height: 300px;
-}
-
-.card h3 {
-  font-family: "quicksand";
-  font-weight: 1400;
-  font-size: 1.6em;
-}
-
-.card p {
-  font-family: "quicksand";
-}
-
-/* ------------------------ 2ND SECTION SERVICES PAGE -------------------- */
-
-.s-services {
-  display: grid;
-  width: 100%;
-  height: 100vh;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
-  align-items: center;
-
-  grid-template-areas: "texto img";
-}
-
-.s-texto {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  justify-content: center;
-  align-items: flex-start;
-  font-family: "montserrat";
-  margin: 30px;
-  grid-area: texto;
-}
-
-.s-texto h2 {
-  font-family: "forum";
-  font-size: 4.5em;
-  letter-spacing: 1px;
-}
-
-.s-texto p {
-  font-size: 1.8em;
-}
-
-.s-img {
-  height: 53vh;
-  width: 40vw;
-  
-}
-
-/* ------------------------ FORM ------------------------ */
-
-
 
 /* ---------------------------------------------------- RESPONSIVE ------------------------ */
-
-@media (max-width: 1400px) {
-  /* ------------------------ 1ST SECTION INDEX ------------------------ */
-
-  .banner-image {
-    height: $l-height;
-  }
-
-  #premium p {
-    font-size: 1.7em;
-  }
-
-  #premium h2 {
-    font-size: 2.7em;
-  }
-
-  #premium .img-container figure img {
-    width: 450px;
-  }
-
-  /* ------------------------ 1ST SECTION RESOURCES ------------------------ */
-
-  .r-img {
-    width: 90%;
-  }
-
-  /* ------------------------ 2ND SECTION INDEX ------------------------ */
-
-
-  
-  
-
-  /* -------------------- 2ND SECTION PRODUCT PAGE -------------------- */
-
-  .scnd-p h2 {
-    margin-bottom: 70px;
-    margin-left: 40px;
-    font-size: 5em;
-  }
-
-  /* ------------------------ 3RD SECTION INDEX ------------------------ */
-
-
-
-  .qualy-content {
-    gap: 10px;
-  }
-
-  .qualy-title {
-    font-size: 3.2em;
-  }
-
-  .qualy-text {
-    font-size: 2em;
-  }
-}
-
-@media (max-width: 1250px) {
-  
-  /* ------------------------ 3RD SECTION INDEX ------------------------ */
-.video-ts {
-  display: none;
-}
-
-.third-content {
-  height: auto;
-}
-
-  /* ------------------------ 4th SECTION INDEX ------------------------ */
-
-    .four-content {
-      height: auto;
-    }
-
-
-  /* ------------------------ 2nd SECTION SERVICES ------------------------ */
-
-
-    .s-img {
-      height: 40vh;
-      width: 30vw;
-      
-    }
-}
 
 @media (max-width: 1024px) {
   /* ------------------------ HEADER INDEX ------------------------ */
@@ -461,122 +227,7 @@
     line-height: 3vw;
   }
 
-  /* ------------------------ 1ST SECTION INDEX ------------------------ */
-
-  #premium {
-    width: 100%;
-    height: 80vh;
-  }
-
-  #premium p {
-    font-size: 1.5em;
-    letter-spacing: 0.1em;
-  }
-
-  #premium h2 {
-    font-size: 2.5em;
-  }
-
-  #premium .img-container {
-    display: none;
-  }
-
-  .b {
-    margin: 0 auto;
-  }
-
-  #premium .texto {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-  }
-
-  /* ------------------------ 1ST SECTION PRODUCT PAGE ------------------------ */
-
-  .img-page figure img {
-    width: 400px;
-    height: 200px;
-  }
-
-  .p-section {
-    max-width: 900px;
-  }
-
-  .img-page {
-    display: grid;
-    grid-template-columns: 400px 400px;
-    justify-content: space-evenly;
-  }
-
-  .texto-page h2 {
-    font-size: 4em;
-  }
-
-  .texto-page p {
-    font-size: 1.3em;
-  }
-
-  /* ------------------------  1ST SECTION RESOURCES PAGE ------------------------ */
-
-  .r-section {
-    height: auto;
-  }
-
-  .r_texto {
-    font-size: 4.5em;
-    margin-left: 20px;
-  }
-
-  .col-6 {
-    width: 100%;
-  }
-
  
-
-  /* ------------------------ 2ND SECTION INDEX ------------------------ */
-
-  .range .row-h-ss .h2-ss {
-    font-size: 4em;
-  }
-
-  .grid-butt {
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .range .row-h-ss .see {
-    height: auto;
-    width: auto;
-  }
-
-  /* ------------------------ 3RD SECTION INDEX ------------------------ */
-
-  .video-ts {
-    display: none;
-  }
-
-  .third-content {
-    height: auto;
-  }
-
-  /* ------------------------ 4TH SECTION INDEX ------------------------ */
-
-  .img-div {
-    display: none;
-  }
-
-  
-
-  .four-content .row1 {
-    height: auto;
-  }
-
-  .four-content .row2 {
-    height: auto;
-  }
 }
 
 @media (max-width: 850px) {
@@ -660,167 +311,6 @@
     margin-top: 10px;
   }
 
-  /* ------------------------ 1ST SECTION INDEX ------------------------ */
-
-  .img-fs {
-    display: none;
-  }
-
-  .texto {
-    align-items: center;
-  }
-
-  #premium p {
-    font-size: 0.5em;
-  }
-
-  #premium h2 {
-    font-size: 1em;
-  }
-
-  #premium .b {
-    font-size: 1em;
-    height: 30px;
-    width: 200px;
-  }
-
-  /* ------------------------ 1ST SECTION PRODUCT PAGE ------------------------ */
-
-  .img-page {
-    display: none;
-  }
-
-  .texto-page h2 {
-    font-size: 3em;
-  }
-
-  .texto-page p {
-    font-size: 1.3em;
-  }
-
-  /* ------------------------ 1ST SECTION SERVICES PAGE ------------------------ */
-
-
-  .s-section h2 {
-    font-size: 2.7em;
-  }
-
-  .s-section p {
-    font-size: 1.3em;
-  }
-
-  /* ------------------------ 1ST SECTION RESOURCES ------------------------ */
-
-  .img-div {
-    display: none;
-  }
-
-  .r-section {
-    height: auto;
-  }
-
-  .col-6 {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-
-
-  /* ------------------------ 2ND SECTION INDEX ------------------------ */
-
-  .range .row-h-ss .h2-ss {
-    font-size: 3.2em;
-  }
-
- 
-
-  /* ------------------------ 2ND SECTION PRODUCT PAGE ------------------------ */
-
-  .scnd-p {
-    margin-top: 20px;
-  }
-
-  .scnd-p h2 {
-    font-size: 2.3em;
-  }
-
-  .card h3 {
-    font-family: "quicksand";
-    font-weight: bold;
-    font-size: 1.2em;
-  }
-
-  /* ------------------------ 2ND SECTION SERVICES PAGE ------------------------ */
-
-  .s-services {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-
-  .s-services .s-texto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .s-texto-header {
-    display: none;
-  }
-
-  .s-services img {
-    display: none;
-  }
-
-  .s-services h2 {
-    font-size: 2.7em;
-  }
-
-  .s-services p {
-    font-size: 1.3em;
-  }
-
-  /* ------------------------ 3RD SECTION INDEX ------------------------ */
-
-  .third-content {
-    height: auto;
-  }
-
-  .qualy-title {
-    font-size: 3.2em;
-  }
-
-  .qualy-text {
-    font-size: 2em;
-  }
-
-  .qualy-b {
-    width: 200px;
-    height: 70px;
-    font-size: 1.3em;
-  }
-
-  /* ------------------------ 4TH SECTION INDEX ------------------------ */
-
-  
-
-  .f-text {
-    font-size: 3em;
-    margin: 0 auto;
-  }
-
-  /* ------------------------ FORM ------------------------ */
-
-  .form-content {
-    height: 60vh;
-    font-size: 0.7em;
-    padding: 25px 100px;
-  }
-
-  .c-btn {
-    font-size: 0.7em;
-  }
 }
 
 @media (max-width: 480px) {
@@ -921,158 +411,6 @@
     font-size: 1em;
   }
 
-  /* ------------------------ 1ST SECTION INDEX ------------------------ */
-
-  #premium {
-    height: 200px;
-    gap: 0;
-  }
-
-  #premium p {
-    font-size: 0.4em;
-  }
-
-  #premium h2 {
-    font-size: 0.6em;
-  }
-
-  #premium .b {
-    width: 100px;
-    height: 20px;
-    font-size: 0.3em;
-  }
-
-  /* ------------------------ 1ST SECTION PRODUCT PAGE ------------------------ */
-
-  .texto-page {
-    margin-top: 25px;
-    padding: 10px;
-  }
-
-  .texto-page h2 {
-    font-size: 2em;
-  }
-
-  .texto-page p {
-    font-size: 1em;
-  }
-
-  /* ------------------------ 1ST SECTION SERVICE PAGE ------------------------ */
-
-  .s-section {
-    margin-top: 10px;
-  }
-
-  .s-section h2 {
-    font-size: 1.5em;
-  }
-
-  .s-section p {
-    font-size: 1em;
-    margin-top: 10px;
-  }
-
-  /* ------------------------ 1ST SECTION RESOURCES ------------------------ */
-
-  .r-section img {
-    display: none;
-  }
-
-  /* ------------------------ 2ND SECTION INDEX ------------------------ */
-
-  .range {
-    height: 40vh;
-  }
-
-  .div-h2-ss {
-    display: none;
-  }
-
-  .grid-butt {
-    display: grid;
-    grid-template-columns: auto ;
-  }
-
-  .range .row-h-ss .see {
-    height: auto;
-    width: auto;
-    font-size: 0.7em;
-  }
-
-  #range .grid-botones {
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* ------------------------ 2ND SECTION PRODUCT PAGE ------------------------ */
-
-  .scnd-p h2 {
-    font-size: 1.8em;
-    margin-left: 20px;
-    margin-bottom: 40px;
-  }
-
-  .mat-prima {
-    margin-left: 0px;
-  }
-
-  .card {
-    width: auto;
-    height: auto;
-  }
-
-  /* ------------------------ 2ND SECTION SERVICE PAGE ------------------------ */
-
-  .s-services .s-texto h2 {
-    font-size: 1.5em;
-  }
-
-  .s-services .s-texto p {
-    font-size: 1em;
-  }
-
-  .s-services .s-texto {
-    margin: 10px;
-    width: 90%;
-  }
-
-  .s-services {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-  }
-
-  /* ------------------------ 3RD SECTION INDEX ------------------------ */
-
- 
-  .third-content .qualy-text {
-    font-size: 1.8em;
-  }
-
-  .third-content .qualy-title {
-    font-size: 3em;
-  }
- 
-
-  .qualy-b {
-    width: 120px;
-    height: 70px;
-    font-size: 0.7em;
-  }
-
-  /* ------------------------ 4TH SECTION INDEX ------------------------ */
-
-  .four-content .row1 .f-text {
-    font-size: 3em;
-  }
-
-  .f-button {
-    width: 120px;
-    height: 70px;
-    font-size: 0.7em;
-  }
-
   /* ------------------------ FOOTER INDEX ------------------------ */
 
   .footer {
@@ -1091,16 +429,4 @@
     font-size: 20px;
   }
 
-  /* ------------------------ FORM ------------------------ */
-
-  .form-content {
-    height: 70vh;
-    font-size: 0.5em;
-    padding: 0;
-    width: 100%;
-  }
-
-  .c-btn {
-    font-size: 0.5em;
-  }
 }
