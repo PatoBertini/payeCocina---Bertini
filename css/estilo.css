@@ -1,5 +1,5 @@
 /* ------------------------ FUENTE ------------------------ */
-@import url("https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Forum&family=Koulen&family=Montserrat:wght@100&family=Parisienne&family=Questrial&family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Forum&family=Koulen&family=Montserrat:wght@100;300;400;700&family=Parisienne&family=Questrial&family=Quicksand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Forum&family=Koulen&family=Parisienne&family=Questrial&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Forum&family=Koulen&family=Montserrat:wght@100&family=Parisienne&family=Questrial&display=swap");
 /* ------------------------ GENERALES ------------------------ */
@@ -32,6 +32,7 @@ html {
 .premium .texto-fs {
   color: white;
   font-family: "montserrat";
+  font-weight: 300;
   gap: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,7 +48,6 @@ html {
 
 .premium .texto-fs h2 {
   font-size: 3em;
-  font-weight: bold;
 }
 
 .premium .texto-fs p {
@@ -58,7 +58,7 @@ html {
 .premium .b {
   font-family: "montserrat";
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: 300;
   color: white;
   background-color: black;
   height: 50px;
@@ -101,13 +101,13 @@ html {
 
 .range .row-h-ss .h2-ss {
   font-size: 6em;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 .range .row-h-ss .product {
   font-family: "montserrat";
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: 300;
   color: white;
   background-color: black;
   height: 58px;
@@ -159,7 +159,7 @@ html {
   text-decoration: none;
   font-family: "montserrat";
   font-size: 1.8em;
-  font-weight: bold;
+  font-weight: 300;
   background-color: transparent;
   color: white;
 }
@@ -178,7 +178,7 @@ html {
   font-size: 4em;
   color: white;
   font-family: "montserrat";
-  font-weight: bold;
+  font-weight: 300;
   text-align: center;
 }
 
@@ -195,7 +195,7 @@ html {
   height: 50px;
   font-size: 1em;
   color: white;
-  font-weight: bold;
+  font-weight: 300;
   border: 2px solid grey;
   background-color: transparent;
   font-family: "montserrat";
@@ -239,7 +239,7 @@ html {
 .four-content .row1 .f-text {
   font-size: 4em;
   font-family: "montserrat";
-  font-weight: bold;
+  font-weight: 300;
 }
 
 .four-content .row1 .img-final {
@@ -257,7 +257,7 @@ html {
   height: 50px;
   font-family: "montserrat";
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: 300;
   border: 3px solid rgba(205, 119, 28, 0.5);
   background-color: white;
   color: black;
@@ -560,6 +560,8 @@ html {
 .card .img {
   width: 100%;
   height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 1400px) {
@@ -661,13 +663,13 @@ html {
 }
 
 .s-section h2 {
-  font-family: "forum";
+  font-family: "montserrat";
   font-size: 4.5em;
   letter-spacing: 2px;
 }
 
 .s-section p {
-  font-family: "forum";
+  font-family: "montserrat";
   font-size: 2.2em;
 }
 
@@ -676,7 +678,7 @@ html {
   display: -ms-grid;
   display: grid;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
   -ms-grid-rows: auto;
@@ -710,7 +712,6 @@ html {
 }
 
 .s-services .s-texto h2 {
-  font-family: "forum";
   font-size: 4.5em;
   letter-spacing: 1px;
 }
@@ -736,13 +737,14 @@ html {
   /* ------------------------ 1ST SECTION SERVICES PAGE ------------------------ */
   .s-section {
     padding: 0;
+    margin-top: 15px;
   }
   .s-section h2 {
     font-size: 2.7em;
     letter-spacing: 0px;
   }
-  .s-section .s-section p {
-    font-size: 1.3em;
+  .s-section p {
+    font-size: 1.4em;
   }
   /* ------------------------ 2ND SECTION SERVICES PAGE ------------------------ */
   .s-services {
@@ -933,14 +935,14 @@ html {
   text-decoration: none;
   color: white;
   font-size: 2.1em;
-  font-weight: bolder;
+  font-weight: 400;
   font-family: "montserrat";
 }
 
 .h1-header {
   color: whitesmoke;
   font-size: 7vw;
-  font-weight: 500;
+  font-weight: 400;
   font-family: "forum";
   letter-spacing: 1vw;
   margin-bottom: 50px;

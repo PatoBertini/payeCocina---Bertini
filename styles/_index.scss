@@ -14,6 +14,7 @@
     .texto-fs {
         color: $blanco;
         font-family: $tipografia-principal;
+        font-weight: 300;
         gap: 25px;
         display: flex;
         flex-direction: column;
@@ -21,7 +22,7 @@
 
         h2 {
             font-size: 3em;
-            font-weight: bold;
+            
         }
 
         p {
@@ -33,7 +34,7 @@
     .b {
         font-family: $tipografia-principal;
         font-size: 1.5em;
-        font-weight: bold;
+        font-weight: 300;
         color: $blanco;
         background-color: $negro;
         height: 50px;
@@ -74,13 +75,13 @@
 
         .h2-ss {
             font-size: 6em;
-            font-weight: bold;
+            font-weight: 300;
         }
 
         .product {
             font-family: $tipografia-principal;
             font-size: 1.5em;
-            font-weight: bold;
+            font-weight: 300;
             color: $blanco;
             background-color: $negro;
             height: 58px;
@@ -125,7 +126,7 @@
                 text-decoration: none;
                 font-family: $tipografia-principal;
                 font-size: 1.8em;
-                font-weight: bold;
+                font-weight: 300;
                 background-color: transparent;
                 color: $blanco;
 
@@ -148,7 +149,7 @@
         font-size: 4em;
         color: $blanco;
         font-family: $tipografia-principal;
-        font-weight: bold;
+        font-weight: 300;
         text-align: center;
     }
 
@@ -165,7 +166,7 @@
         height: 50px;
         font-size: 1em;
         color: $blanco;
-        font-weight: bold;
+        font-weight: 300;
         border: 2px solid grey;
         background-color: transparent;
         font-family: $tipografia-principal;
@@ -204,7 +205,7 @@
         .f-text {
             font-size: 4em;
             font-family: $tipografia-principal;
-            font-weight: bold;
+            font-weight: 300;
         }
 
         .img-final {
@@ -222,7 +223,7 @@
             height: 50px;
             font-family: $tipografia-principal;
             font-size: 1.5em;
-            font-weight: bold;
+            font-weight: 300;
             border: 3px solid rgba(205, 119, 28, 0.5);
             background-color: $blanco;
             color: $negro;
