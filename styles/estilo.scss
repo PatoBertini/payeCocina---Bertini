@@ -45,7 +45,7 @@
 
 /* ------------------------ HEADER PRODUCT PAGE ------------------------ */
 
-$estilos:(
+$estilos: (
   color: black,
   centrado: no-repeat,
   size: 60%,
@@ -131,7 +131,7 @@ $estilos:(
 
 .content {
   margin-top: 100px;
-  
+
 }
 
 /* ------------------------ HEADER CONTACT-US PAGE ------------------------ */
@@ -228,7 +228,7 @@ $estilos:(
     line-height: 3vw;
   }
 
- 
+
 }
 
 @media (max-width: 850px) {
@@ -285,9 +285,10 @@ $estilos:(
   /* ------------------------ HEADER RESOURCES PAGE ------------------------ */
 
   .r-texto-header {
-    width: 100%;
-    font-size: 1.5em;
-    line-height: 4vh;
+
+    font-size: 1.2em;
+    line-height: 3.6vw;
+
   }
 
   .chau {
@@ -315,6 +316,7 @@ $estilos:(
 }
 
 @media (max-width: 480px) {
+
   /* ------------------------ HEADER INDEX ------------------------ */
   .banner-image-pp,
   .banner-image-rp,

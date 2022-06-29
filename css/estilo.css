@@ -886,12 +886,8 @@ html {
   .content {
     margin-top: 0px;
   }
-  .r-texto-header {
-    font-size: 1.5em;
-    line-height: 3.6vw;
-  }
   .r-section {
-    height: auto;
+    height: 40vh;
   }
   .r-section .img-div {
     display: none;
@@ -914,6 +910,9 @@ html {
   /* ------------------------ 1ST SECTION RESOURCES ------------------------ */
   .r-section img {
     display: none;
+  }
+  .r-section {
+    height: 50vh;
   }
 }
 
@@ -1162,9 +1161,8 @@ html {
   }
   /* ------------------------ HEADER RESOURCES PAGE ------------------------ */
   .r-texto-header {
-    width: 100%;
-    font-size: 1.5em;
-    line-height: 4vh;
+    font-size: 1.2em;
+    line-height: 3.6vw;
   }
   .chau {
     display: none;
